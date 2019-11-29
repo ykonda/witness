@@ -7,7 +7,6 @@ from os import listdir
 import seaborn as sns
 sns.set(style='white', rc={'axes.facecolor':(0, 0, 0, 0)})
 import matplotlib.pyplot as plt
-import datetime
 
 def get_date(dot_node):
     return date_parser(dot_node.parent.find('div', {'class':'date'}).attrs['title'])
